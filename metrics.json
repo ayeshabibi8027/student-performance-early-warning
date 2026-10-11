@@ -1,0 +1,104 @@
+{
+  "dataset": "UCI Student Performance (maths)",
+  "n_students": 395,
+  "n_features": 32,
+  "pass_rate": 0.6709,
+  "regression_cv": {
+    "A. With G1 and G2 | Ridge": {
+      "r2_mean": 0.793,
+      "r2_std": 0.0418,
+      "mae_mean": 1.3702
+    },
+    "A. With G1 and G2 | Random forest": {
+      "r2_mean": 0.8705,
+      "r2_std": 0.0531,
+      "mae_mean": 1.0258
+    },
+    "B. Early warning | Ridge": {
+      "r2_mean": 0.0326,
+      "r2_std": 0.146,
+      "mae_mean": 3.4066
+    },
+    "B. Early warning | Random forest": {
+      "r2_mean": 0.3034,
+      "r2_std": 0.0295,
+      "mae_mean": 2.8532
+    }
+  },
+  "classifier": "Random forest",
+  "cv_roc_auc_mean": 0.6906,
+  "cv_roc_auc_std": 0.0495,
+  "oof_roc_auc": 0.6873,
+  "capacity_setting": "top 25% of risk ranking",
+  "students_supported": 99,
+  "recall_on_failing": 0.4231,
+  "precision_on_failing": 0.5556,
+  "base_rate_failing": 0.3291,
+  "lift_over_random": 1.688,
+  "capacity_table": [
+    {
+      "capacity": "top 10%",
+      "students seen": 40,
+      "failures caught": 26,
+      "of all failures": 0.2,
+      "hit rate": 0.65,
+      "lift vs random": 1.975
+    },
+    {
+      "capacity": "top 15%",
+      "students seen": 59,
+      "failures caught": 38,
+      "of all failures": 0.2923,
+      "hit rate": 0.6441,
+      "lift vs random": 1.957
+    },
+    {
+      "capacity": "top 20%",
+      "students seen": 79,
+      "failures caught": 46,
+      "of all failures": 0.3538,
+      "hit rate": 0.5823,
+      "lift vs random": 1.7692
+    },
+    {
+      "capacity": "top 25%",
+      "students seen": 99,
+      "failures caught": 55,
+      "of all failures": 0.4231,
+      "hit rate": 0.5556,
+      "lift vs random": 1.688
+    },
+    {
+      "capacity": "top 30%",
+      "students seen": 118,
+      "failures caught": 62,
+      "of all failures": 0.4769,
+      "hit rate": 0.5254,
+      "lift vs random": 1.5965
+    },
+    {
+      "capacity": "top 40%",
+      "students seen": 158,
+      "failures caught": 73,
+      "of all failures": 0.5615,
+      "hit rate": 0.462,
+      "lift vs random": 1.4038
+    },
+    {
+      "capacity": "top 50%",
+      "students seen": 198,
+      "failures caught": 84,
+      "of all failures": 0.6462,
+      "hit rate": 0.4242,
+      "lift vs random": 1.289
+    }
+  ],
+  "top_features": [
+    "failures",
+    "absences",
+    "schoolsup",
+    "goout",
+    "sex",
+    "age"
+  ]
+}
